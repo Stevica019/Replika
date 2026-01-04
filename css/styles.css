@@ -1,0 +1,315 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+    "Oxygen-Sans", "Ubuntu", "Cantarell", "Helvetica Neue", sans-serif;
+}
+.top-content {
+  width: 100%;
+  background-color: #eed2e2;
+  display: flex;
+  justify-content: center;
+  padding: 10px 10px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+/* NAVIGACIJA */
+.nav-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 100px;
+  justify-content: space-between;
+  font-weight: bold;
+}
+.left-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 40px;
+  padding: 10px 70px;
+}
+.right-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 16px;
+  height: 100%;
+}
+
+#nav-item {
+  text-decoration: none;
+  color: black;
+  font-size: 16px;
+  font-weight: 600;
+}
+.nav-logo {
+  width: 80px;
+  height: auto;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.btn-div {
+  position: relative;
+  text-transform: uppercase;
+  background-color: #1d1d1b;
+  overflow: hidden;
+  color: white;
+  padding: 20px 35px;
+  display: flex;
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: "Inter";
+}
+.btn-background {
+  position: absolute;
+  width: 200px;
+  height: 125px;
+  fill: white;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.menu-btn {
+  border-left: 1px solid black;
+  height: 100%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0px 15px;
+}
+.menu-btn img {
+  height: 60px;
+  width: 60px;
+}
+
+/* MAIN */
+
+.landing-img {
+  width: 100%;
+  height: auto;
+}
+
+.location-items-container {
+  display: flex;
+  flex-direction: row;
+  background-color: #eed2e2;
+  height: 550px;
+}
+.location-container {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  height: 100%;
+  justify-content: center;
+  padding-left: 100px;
+  padding-right: 40px;
+}
+.location-container h1 {
+  font-weight: 900;
+  line-height: 1;
+}
+.location-container p {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 60px;
+}
+
+#location-link {
+  text-decoration: none;
+  color: black;
+}
+.items-container {
+  display: flex;
+  flex-direction: row;
+  width: 50%;
+  height: 100%;
+}
+.item {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  border-left: 2px solid black;
+  font-size: 32px;
+  width: 50%;
+  padding: 25px 40px;
+}
+.item-text {
+  margin-top: auto;
+}
+.item-text h4 {
+  font-weight: 600;
+}
+.item-text p {
+  font-size: 20px;
+  font-weight: normal;
+}
+.item img {
+  width: 400px;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+.text-image-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.text-image-container h1 {
+  padding: 30px 30px;
+  width: 50%;
+  text-align: center;
+  line-height: 1;
+  font-weight: 600;
+}
+.text-image-container img {
+  width: 50%;
+}
+.cs-locations {
+  display: flex;
+  flex-direction: row;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+.cs-text-container {
+  display: flex;
+  flex-direction: row;
+  width: 40%;
+}
+.vertical-text {
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  font-size: 2.75rem;
+  padding: 40px 30px;
+  font-family: "Orbitron", Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+.vertical-text:not(:first-child) {
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+}
+.cs-image-container {
+  display: flex;
+  padding: 60px;
+}
+.cs-image-container img {
+  width: 75%;
+  height: auto;
+  border-radius: 10px;
+}
+.cs-info {
+  padding: 50px;
+}
+.cs-info h2 {
+  font-size: 1.75rem;
+  margin-bottom: 16px;
+}
+.cs-info p {
+  font-size: 1rem;
+  font-weight: 500;
+}
+#store-title {
+  font-size: 3.5rem;
+  font-weight: bold;
+  font-family: "Orbitron ", Arial, Helvetica, sans-serif;
+  padding: 36px;
+}
+.coffee-container {
+  display: flex;
+  flex-direction: row;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+.coffee-item {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+  border-right: 1px solid black;
+}
+.coffee-item h1 {
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin-bottom: 8px;
+}
+.coffee-item p {
+  font-size: 1em;
+  font-weight: 600;
+}
+
+.coffee-item img {
+  width: 100%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+.learn-more-container {
+  background-color: #eed2e2;
+  display: flex;
+}
+.learn-more-container h1 {
+  font-size: 44px;
+  padding: 20px 50px;
+  width: 40%;
+}
+.learn-more-items {
+  display: flex;
+  flex-direction: column;
+  border-left: 1px solid black;
+  width: 60%;
+}
+.lm-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-bottom: 1px solid black;
+}
+.lm-item-text {
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+  gap: 8px;
+  font-weight: 600;
+}
+.lm-item-text h2 {
+  font-weight: bold;
+  font-size: 1.75em;
+  text-transform: uppercase;
+}
+.read-more {
+  display: flex;
+  margin-left: auto;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.become-barista {
+  display: flex;
+  padding: 125px;
+}
+.become-barista img {
+  border-radius: 10px;
+}
+.flavor-text {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  padding-left: 100px;
+  gap: 16px;
+}
+.flavor-text h2 {
+  font-size: 1.75em;
+}
+.flavor-text p {
+  font-size: 1em;
+  font-weight: 600;
+  line-height: 1.67;
+  margin-bottom: 40px;
+}
+/* FUTER */
