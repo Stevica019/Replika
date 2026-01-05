@@ -27,15 +27,18 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 40px;
+  gap: 50px;
   padding: 10px 70px;
 }
 .right-container {
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 16px;
+  gap: 32px;
   height: 100%;
+}
+.right-container i {
+  user-select: none;
 }
 
 #nav-item {
@@ -51,27 +54,34 @@
   left: 50%;
   transform: translateX(-50%);
 }
+.nav-logo img {
+  width: inherit;
+  height: inherit;
+}
 .btn-div {
   position: relative;
   text-transform: uppercase;
   background-color: #1d1d1b;
   overflow: hidden;
   color: white;
-  padding: 20px 35px;
+  padding: 20px 40px;
   display: flex;
   font-size: 1rem;
   font-weight: 600;
   font-family: "Inter";
+  cursor: pointer;
 }
 .btn-background {
   position: absolute;
   width: 200px;
   height: 125px;
+  inset: 0;
   fill: white;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+  object-fit: cover;
+  transition: transform 0.2s ease;
+}
+.btn-background:hover {
+  transform: scale(1.08);
 }
 .menu-btn {
   border-left: 1px solid black;
