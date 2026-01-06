@@ -11,7 +11,7 @@
   justify-content: center;
   padding: 10px 10px;
   font-size: 14px;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 /* Navigacija */
@@ -22,7 +22,6 @@
   align-items: center;
   height: 100px;
   justify-content: space-between;
-  font-weight: bold;
 }
 .left-container {
   display: flex;
@@ -46,7 +45,7 @@
   text-decoration: none;
   color: black;
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 500;
 }
 .nav-logo {
   width: 80px;
@@ -140,11 +139,11 @@
 }
 
 .arrow.left {
-  left: 15px;
+  left: 14px;
 }
 
 .arrow.right {
-  right: 15px;
+  right: 14px;
 }
 
 .carousel-dots {
@@ -163,6 +162,7 @@
   border: 1px solid black;
   background: #eed2e2;
   border-radius: 2px;
+  cursor: pointer;
 }
 
 .dot.active {
@@ -452,7 +452,7 @@
   flex-direction: row;
   overflow: hidden;
   flex-wrap: wrap;
-  gap: 40px;
+  gap: 28px;
   justify-content: center;
   overflow: hidden;
 }
@@ -480,10 +480,50 @@
   transform: translateX(-50%) translateX(2%);
 }
 
+/* ABOUT STRANICA */
+
+.about-container {
+  display: flex;
+  flex-direction: row;
+  background-color: #fdf1d9;
+  border: 1px solid black;
+}
+.about-container p {
+  font-weight: 500;
+  line-height: 1.67;
+}
+.left-part {
+  width: 50%;
+  padding: 90px;
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+  border-right: 1px solid black;
+}
+.left-part h1 {
+  width: 70%;
+  font-size: 36px;
+}
+
+.bottom-pars {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.right-part {
+  width: 50%;
+  padding: 90px;
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+  align-items: start;
+}
+
 /* FUTER */
 
 .footer {
-  padding: 60px 80px 30px;
+  padding: 80px 80px 30px;
   font-family: Arial, sans-serif;
   font-weight: 500;
   color: black;
@@ -502,7 +542,7 @@
 
 .logo-with-info {
   display: flex;
-  gap: 20px;
+  gap: 30px;
   align-items: flex-start;
 }
 
@@ -512,31 +552,31 @@
 }
 
 .kafeterija-info h2 {
-  margin: 0 0 10px;
-  font-size: 24px;
+  margin: 0 0 20px;
+  font-size: 32px;
   font-weight: 700;
 }
 
 .kafeterija-info p {
-  margin: 4px 0;
-  font-size: 14px;
+  margin: 8px 0;
+  font-size: 15px;
 }
 
 .store-badges {
   margin-top: 30px;
   display: flex;
   flex-direction: column;
-  gap: 10px;
 }
 
 .store-badges img {
-  width: 160px;
+  width: 190px;
   cursor: pointer;
 }
 
 .footer-right {
+  width: 50%;
   display: flex;
-  gap: 80px;
+  gap: 200px;
 }
 
 .footer-links,
@@ -548,15 +588,32 @@
 
 .footer-links p,
 .footer-socials p {
-  font-size: 14px;
+  font-size: 15px;
   cursor: pointer;
 }
 
 .footer-bottom {
   margin-top: 50px;
-  font-size: 13px;
+  font-size: 14px;
 }
 
 .footer-bottom p {
-  margin: 4px 0;
+  margin: 8px 0;
+}
+.footer-payments {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 40px;
+}
+.footer-payments img {
+  height: 28px;
+  width: auto;
+}
+.vertical-line {
+  width: 1px;
+  height: 60px;
+  background-color: #ccc;
 }
