@@ -14,7 +14,8 @@
   font-weight: 600;
 }
 
-/* NAVIGACIJA */
+/* Navigacija */
+
 .nav-container {
   display: flex;
   flex-direction: row;
@@ -90,19 +91,85 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0px 15px;
+  padding: 0px 20px;
 }
 .menu-btn img {
   height: 60px;
   width: 60px;
+  transition: transform 0.3s ease;
+}
+
+.menu-btn:hover img {
+  transform: rotate(90deg);
 }
 
 /* MAIN */
 
+/* Carousel */
+
+.carousel {
+  position: relative;
+  width: 100%;
+}
+
+.carousel-track {
+  overflow: hidden;
+}
+
 .landing-img {
   width: 100%;
   height: auto;
+  display: block;
 }
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #eed2e2;
+  border-radius: 50%;
+  border: unset;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  font-size: 20px;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.arrow.left {
+  left: 15px;
+}
+
+.arrow.right {
+  right: 15px;
+}
+
+.carousel-dots {
+  position: absolute;
+  bottom: 12px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  display: flex;
+  gap: 30px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border: 1px solid black;
+  background: #eed2e2;
+  border-radius: 2px;
+}
+
+.dot.active {
+  background: #2ecc71;
+}
+
+/* Text i produkti */
 
 .location-items-container {
   display: flex;
@@ -118,16 +185,18 @@
   justify-content: center;
   padding-left: 100px;
   padding-right: 40px;
+  gap: 80px;
 }
 .location-container h1 {
-  font-weight: 900;
+  font-weight: 700;
   line-height: 1;
 }
 .location-container p {
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin-top: 60px;
+  font-size: 1em;
+  font-weight: 500;
 }
 
 #location-link {
@@ -165,6 +234,9 @@
   margin-left: auto;
   margin-right: auto;
 }
+
+/* Text i slika konobara */
+
 .text-image-container {
   display: flex;
   flex-direction: row;
@@ -180,6 +252,9 @@
 .text-image-container img {
   width: 50%;
 }
+
+/* Coffee Shop lokacije */
+
 .cs-locations {
   display: flex;
   flex-direction: row;
@@ -223,6 +298,9 @@
   font-size: 1rem;
   font-weight: 500;
 }
+
+/* Prodavnica */
+
 #store-title {
   font-size: 3.5rem;
   font-weight: bold;
@@ -258,6 +336,9 @@
   margin-left: auto;
   margin-right: auto;
 }
+
+/* Saznaj Vise */
+
 .learn-more-container {
   background-color: #eed2e2;
   display: flex;
@@ -298,9 +379,13 @@
   text-transform: uppercase;
   font-weight: 600;
 }
+
+/* Postani Barista */
+
 .become-barista {
   display: flex;
   padding: 125px;
+  border: 1px solid black;
 }
 .become-barista img {
   border-radius: 10px;
@@ -322,4 +407,156 @@
   line-height: 1.67;
   margin-bottom: 40px;
 }
+
+/* Pratite Nas */
+
+.follow-us-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.title-socials {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 60px;
+  border: 1px solid black;
+}
+
+.title-socials h1 {
+  font-size: 4.5rem;
+}
+
+.socials-container {
+  display: flex;
+  gap: 5px;
+}
+
+.social-icons {
+  background: black;
+  padding: 14px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-icons i {
+  color: white;
+  font-size: 24px;
+}
+
+.images-container {
+  padding: 45px 0px;
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: center;
+  overflow: hidden;
+}
+.image-box {
+  width: 325px;
+  height: 400px;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+}
+
+.image-box img {
+  width: 110%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: transform 0.4s ease;
+  cursor: pointer;
+}
+
+.image-box:hover img {
+  transform: translateX(-50%) translateX(2%);
+}
+
 /* FUTER */
+
+.footer {
+  padding: 60px 80px 30px;
+  font-family: Arial, sans-serif;
+  font-weight: 500;
+  color: black;
+  border-top: 1px solid black;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.footer-left {
+  max-width: 500px;
+}
+
+.logo-with-info {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.footer-logo {
+  width: 100px;
+  height: auto;
+}
+
+.kafeterija-info h2 {
+  margin: 0 0 10px;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.kafeterija-info p {
+  margin: 4px 0;
+  font-size: 14px;
+}
+
+.store-badges {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.store-badges img {
+  width: 160px;
+  cursor: pointer;
+}
+
+.footer-right {
+  display: flex;
+  gap: 80px;
+}
+
+.footer-links,
+.footer-socials {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.footer-links p,
+.footer-socials p {
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.footer-bottom {
+  margin-top: 50px;
+  font-size: 13px;
+}
+
+.footer-bottom p {
+  margin: 4px 0;
+}

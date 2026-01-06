@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="icon" type="image/png" href="./images/logo.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oi&display=swap"
+      rel="stylesheet"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
@@ -53,7 +59,28 @@
       </nav>
     </header>
     <main>
-      <img src="/images/landing.png" alt="Landing Image" class="landing-img" />
+      <div class="carousel">
+        <button class="arrow left">&#10094;</button>
+
+        <div class="carousel-track">
+          <img
+            src="/images/landing.png"
+            alt="Landing Image"
+            class="landing-img"
+          />
+        </div>
+
+        <button class="arrow right">&#10095;</button>
+
+        <div class="carousel-dots">
+          <span class="dot active"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+
+          <span class="dot"></span>
+        </div>
+      </div>
       <div class="location-items-container">
         <div class="location-container">
           <h1>
@@ -213,7 +240,98 @@
           </span>
         </div>
       </div>
+      <div class="follow-us-container">
+        <div class="title-socials">
+          <h1>Пратите нас</h1>
+          <div class="socials-container">
+            <span class="social-icons">
+              <i class="fa-brands fa-facebook"></i>
+            </span>
+            <span class="social-icons">
+              <i class="fa-brands fa-instagram"></i>
+            </span>
+            <span class="social-icons">
+              <i class="fa-brands fa-twitter"></i>
+            </span>
+            <span class="social-icons">
+              <i class="fa-brands fa-linkedin"></i>
+            </span>
+          </div>
+        </div>
+        <div class="images-container">
+          <div class="image-box">
+            <img src="/images/follow-us/slika1.jpg" alt="Slika 1" />
+          </div>
+          <div class="image-box">
+            <img src="/images/follow-us/slika2.jpeg" alt="Slika 2" />
+          </div>
+          <div class="image-box">
+            <img src="/images/follow-us/slika3.jpeg" alt="Slika 3" />
+          </div>
+          <div class="image-box">
+            <img src="/images/follow-us/slika4.jpg" alt="Slika 4" />
+          </div>
+          <div class="image-box">
+            <img src="/images/follow-us/slika5.jpg" alt="Slika 5" />
+          </div>
+          <div class="image-box">
+            <img src="/images/follow-us/slika6.jpg" alt="Slika 6" />
+          </div>
+          <div class="image-box">
+            <img src="/images/follow-us/slika7.jpg" alt="Slika 7" />
+          </div>
+          <div class="image-box">
+            <img src="/images/follow-us/slika8.jpg" alt="Slika 8" />
+          </div>
+          <div class="image-box">
+            <img src="/images/follow-us/slika9.jpg" alt="Slika 9" />
+          </div>
+          <div class="image-box">
+            <img src="/images/follow-us/slika10.jpg" alt="Slika 10" />
+          </div>
+        </div>
+      </div>
     </main>
-    <footer></footer>
+    <footer class="footer">
+      <div class="footer-top">
+        <div class="footer-left">
+          <div class="logo-with-info">
+            <img src="/images/logo.png" alt="Kafeterija" class="footer-logo" />
+            <div class="kafeterija-info">
+              <h2>KAFETERIJA</h2>
+              <p>Кафетерија & Love&Brands</p>
+              <p>Студентски трг 15, 11 000 Београд, Србија</p>
+              <p>ПИБ: 108353310</p>
+              <p>МБ: 20982187</p>
+            </div>
+          </div>
+
+          <div class="store-badges">
+            <img src="/images/Google-play-1.png" alt="Google store" />
+            <img src="/images/apple-copy-1.png" alt="Apple Store" />
+          </div>
+        </div>
+
+        <div class="footer-right">
+          <div class="footer-links">
+            <p>Ауторска права</p>
+            <p>Политика и заштита приватности</p>
+            <p>Рекламације</p>
+          </div>
+
+          <div class="footer-socials">
+            <p>ФБ</p>
+            <p>Х</p>
+            <p>Инстаграм</p>
+            <p>ЛинкедИн</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2024 Kafeterija</p>
+        <p>Design and Development by Monday Morning</p>
+      </div>
+    </footer>
   </body>
 </html>
