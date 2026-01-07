@@ -563,6 +563,96 @@
 
 /* KORPO DOGADJAJI PAGE */
 
+.corpo-container {
+  display: flex;
+  border: 1px solid black;
+  background-color: #fdf1d9;
+}
+.left-corpo {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  border-right: 1px solid black;
+  padding: 80px;
+}
+.left-corpo h1,
+.right-corpo h1 {
+  font-size: 2rem;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+}
+.right-corpo {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  padding: 80px;
+}
+
+.right-corpo p {
+  margin-bottom: 10px;
+  font-size: 1rem;
+  font-weight: bold;
+  line-height: 1.5;
+  width: 80%;
+}
+
+.form-flex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+}
+
+.field.half {
+  width: 45%;
+}
+
+.field.full {
+  width: 93%;
+}
+
+.left-corpo label {
+  font-size: 1rem;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.left-corpo label span {
+  color: #e45757;
+}
+
+input {
+  padding: 5px;
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.25);
+  font-size: 0.9rem;
+  background: #ffffff2e;
+}
+
+input:focus {
+  outline: none;
+  border-color: rgba(0, 0, 0, 0.25);
+}
+
+.left-corpo button {
+  margin-top: 25px;
+  padding: 10px 20px;
+  background: #f1b5c6;
+  border: none;
+  border-radius: 12px;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.left-corpo button:hover {
+  opacity: 0.9;
+}
+
 /* FUTER */
 
 .footer {
@@ -762,5 +852,13 @@
   .gallery-box {
     width: 250px;
     height: 320px;
+  }
+
+  /* CORPO DOGADJAJI */
+  .left-corpo label {
+    font-size: 0.9rem;
+  }
+  .field.full {
+    width: 94%;
   }
 }
