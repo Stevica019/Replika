@@ -626,7 +626,7 @@
   color: #e45757;
 }
 
-input {
+.left-corpo input {
   padding: 5px;
   border-radius: 10px;
   border: 1px solid rgba(0, 0, 0, 0.25);
@@ -634,7 +634,7 @@ input {
   background: #ffffff2e;
 }
 
-input:focus {
+.left-corpo input:focus {
   outline: none;
   border-color: rgba(0, 0, 0, 0.25);
 }
@@ -703,6 +703,98 @@ input:focus {
 .kontakt-info p {
   font-size: 1rem;
   font-weight: 500;
+}
+
+/* POSAO */
+#landing-img-job {
+  width: 100%;
+}
+
+.left-job h1 {
+  font-size: 2rem;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+}
+.right-job h1 {
+  font-size: 2rem;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+  width: 80%;
+}
+.right-job {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  padding: 80px;
+}
+
+.item-div {
+  padding: 8px;
+  display: flex;
+  gap: 16px;
+}
+.item-div img {
+  width: 20px;
+  height: 20px;
+}
+.item-div p {
+  font-size: 1.1rem;
+  font-weight: 500;
+  width: 80%;
+}
+.job-container {
+  display: flex;
+  background-color: #fdf1d9;
+  border: 1px solid black;
+}
+
+.left-job {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 50%;
+  border-right: 1px solid black;
+  padding: 80px;
+  align-items: start;
+}
+
+.left-job label {
+  font-size: 1rem;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.left-job label span {
+  color: #e45757;
+}
+
+.left-job input {
+  padding: 5px;
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.25);
+  font-size: 0.9rem;
+  background: #ffffff2e;
+  width: 100%;
+}
+
+.left-job input:focus {
+  outline: none;
+  border-color: rgba(0, 0, 0, 0.25);
+}
+
+.left-job button {
+  margin-top: 25px;
+  padding: 10px 20px;
+  background: #f1b5c6;
+  border: none;
+  border-radius: 12px;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.left-job button:hover {
+  opacity: 0.9;
 }
 
 /* FUTER */
