@@ -705,6 +705,14 @@
   font-weight: 500;
 }
 
+.map-example {
+  display: flex;
+  padding: 24px;
+  gap: 8px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
 /* POSAO */
 #landing-img-job {
   width: 100%;
@@ -871,6 +879,27 @@
   border-top: 1px solid black;
   padding-top: 48px;
   padding-bottom: 24px;
+  text-transform: uppercase;
+}
+
+/* MAPS */
+
+.map-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 20px;
+  padding: 40px;
+  border: 1px solid black;
+}
+.map-container iframe {
+  border-radius: 12px;
+}
+.map-text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
 }
 
 /* FUTER */
